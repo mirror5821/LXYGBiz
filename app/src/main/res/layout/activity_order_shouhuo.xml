@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar" />
+
+    <LinearLayout style="@style/LLMyItem">
+
+        <TextView
+            style="@style/TvZiZhiTitle"
+            android:drawableLeft="@mipmap/ic_order_all_s" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/ETZizhi"
+            android:hint="@string/input_shouhuo_code"
+            android:inputType="phone" />
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/sub"
+        style="@style/BtnRed"
+        android:layout_margin="@dimen/view_margin_top"
+        android:text="@string/submit"/>
+
+
+</LinearLayout>

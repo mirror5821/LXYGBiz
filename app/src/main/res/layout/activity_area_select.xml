@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#e7e7e7"
+                android:dividerHeight="0dp"
+                android:divider="@color/main_bg"/>
+
+            <ListView
+                android:id="@+id/listview2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:background="#f5f5f5"
+                android:dividerHeight="0dp"
+                android:divider="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_loading"/>
+
+                <TextView
+                    android:id="@+id/tv_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/empty_d"/>
+
+                <ListView
+                    android:id="@+id/listview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:dividerHeight="0dp"
+                    android:divider="@color/white"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

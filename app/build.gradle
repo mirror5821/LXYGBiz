@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.lxyg.app.business"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile project(':devMirrorLibrary')
+    compile project(':jPushLibrary')
+    compile project(':umengLirary')
+    compile project(':zxingLibrary')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile files('libs/baidumapapi_v3_3_0.jar')
+    compile files('libs/locSDK_5.0.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/btsdk.jar')
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_normal_height"
+                android:gravity="center"
+                android:text="@string/yu_e" />
+
+            <LinearLayout
+                style="@style/LLMyItem"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_order_dai_shou"
+                    android:text="@string/send_manager" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                style="@style/LLMyItem" >
+
+                <EditText
+                    android:id="@+id/et_balance"
+                    style="@style/TvMyItem"
+                    android:background="@drawable/bg_normal_press_white"
+                    android:inputType="number"
+                    android:drawableLeft="@mipmap/ic_money"
+                    android:hint="@string/input_tixian_jine" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_sxf"
+                    android:text="@string/sxf" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_user_vip_s"
+                    android:text="@string/ssdz" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/view_margin_left"
+                android:background="@drawable/shape"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/LLMyItem" >
+
+                    <TextView
+                        android:id="@+id/bank_name"
+                        style="@style/TvMyItem"
+                        android:text="@string/sxf" />
+                </LinearLayout>
+
+                <View style="@style/Line3" />
+
+                <LinearLayout
+                    style="@style/LLMyItem" >
+
+                    <TextView
+                        android:id="@+id/bank_num"
+                        style="@style/TvMyItem"
+                        android:text="@string/sxf" 
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LLMyItem" >
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/TvMyItem"
+                        android:text="@string/sxf" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_normal_height"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/view_margin_left"
+        android:paddingRight="@dimen/view_margin_left">
+        
+        <Button 
+            android:id="@+id/sub"
+            style="@style/BtnRed"
+            android:layout_height="40dp"
+            android:text="@string/tixian"/>
+    </LinearLayout>
+
+</LinearLayout>

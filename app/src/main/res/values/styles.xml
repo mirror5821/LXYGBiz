@@ -1,0 +1,309 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MainTab" parent="AppTheme">
+        <item name="android:textColor">@drawable/tab_tv</item>
+    </style>
+
+
+    <style name="Line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1sp</item>
+        <item name="android:background">@color/main_red</item>
+    </style>
+
+    <style name="Line1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1sp</item>
+        <item name="android:background">@color/main_bg</item>
+    </style>
+
+    <style name="Line2">
+        <item name="android:layout_width">1sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/main_bg</item>
+    </style>
+
+    <style name="TvIndex">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/tv_item_title</item>
+        <item name="android:textSize">@dimen/tv_m</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TvIndexL">
+        <item name="android:textColor">@color/tv_index_item</item>
+        <item name="android:textSize">@dimen/tv_s</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="TvIndexB">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/tv_s</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="TvIndexRed">
+        <item name="android:textColor">@color/main_red</item>
+        <item name="android:textSize">@dimen/tv_m</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="LLIndex">
+        <item name="android:background">@drawable/bg_normal_press_white</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="OrderItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_order</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="TvOrderNum">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_red</item>
+        <item name="android:textSize">@dimen/tv_s</item>
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+
+    <style name="BtnCommon">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BtnRed" parent="BtnCommon">
+        <item name="android:background">@drawable/bg_red</item>
+    </style>
+
+    <style name="BtnBlue" parent="BtnCommon">
+        <item name="android:background">@drawable/bg_blue</item>
+    </style>
+
+    <style name="BtnDark" parent="BtnCommon">
+        <item name="android:background">@drawable/bg_dark</item>
+    </style>
+
+
+    <style name="TvCustomerHeader">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/tv_s</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    <style name="TvItemCommon">
+        <item name="android:layout_height">@dimen/item_normal_height</item>
+        <item name="android:textSize">@dimen/tv_m</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="TvCaiwuDark" parent="TvItemCommon">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@color/caiwu_dark</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_height">36dp</item>
+    </style>
+
+    <style name="TvCaiwu" parent="TvItemCommon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="TvMyTitle" parent="TvItemCommon">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@color/main_bg</item>
+    </style>
+
+
+    <style name="TvMyItem" parent="TvItemCommon">
+        <item name="android:textColor">@color/tv_item_title</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+
+    <style name="TvMyItemNum" parent="TvItemCommon">
+        <item name="android:textColor">@color/tv_item_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:drawableRight">@mipmap/ic_next_gray</item>
+    </style>
+
+    <style name="LLMyItem" parent="@style/WH_WF_HW">
+        <item name="android:background">@drawable/bg_normal_press_white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Line3" parent="Line1">
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="Line4">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1sp</item>
+        <item name="android:background">@color/driver</item>
+    </style>
+
+    <style name="TvOrderList">
+        <item name="android:textColor">@color/tv_item_title</item>
+        <item name="android:textSize">@dimen/tv_m</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="RBOpen" parent="@style/WH_W">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/btn_more</item>
+        <item name="android:button">@null</item>
+    </style>
+
+
+    <style name="TvZiZhiTitle" parent="TvItemCommon">
+        <item name="android:textColor">@color/tv_item_title</item>
+        <item name="android:layout_width">@dimen/item_normal_height</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+
+    <style name="ETZizhi" parent="TvItemCommon">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@drawable/bg_normal_press_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="RBTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/tv_s</item>
+        <item name="android:textColor">@drawable/bg_rb_tv</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+
+    <style name="TvOrderTitle" parent="TvItemCommon">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@drawable/bg_normal_press_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/tv_index_item</item>
+    </style>
+
+    <style name="TvOrderContent" parent="TvItemCommon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@drawable/bg_normal_press_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/tv_title</item>
+    </style>
+
+
+    <style name="ETTextarea" parent="TvItemCommon">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@drawable/bg_normal_press_white</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:minLines">5</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+
+    <style name="TvInput" parent="TvItemCommon">
+        <item name="android:textColor">@color/tv_item_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+
+    <style name="ETInput" parent="TvItemCommon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@drawable/bg_normal_press_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="ItemShoppingImg">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:src">@mipmap/ic_item_default</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+</resources>

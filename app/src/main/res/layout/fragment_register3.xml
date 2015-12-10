@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+            <TextView
+                style="@style/TvMyTitle"
+                android:text="@string/seller_info"
+                android:layout_height="32dp"/>
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_home" />
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/ETZizhi"
+                    android:hint="@string/input_shop_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+                
+                <TextView
+                    style="@style/ETZizhi"
+                    android:text="@string/kakawuyou_shop" 
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/main_red"/>
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_name" />
+
+                <EditText
+                    android:id="@+id/no"
+                    style="@style/ETZizhi"
+                    android:hint="@string/input_name" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_phone" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/ETZizhi"
+                    android:hint="@string/input_phone" />
+            </LinearLayout>
+
+
+            <View style="@style/Line3" />
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_select"/>
+
+                <TextView
+                    android:id="@+id/type"
+                    style="@style/ETZizhi"
+                    android:hint="@string/input_shop_type" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+
+
+
+            <TextView
+                style="@style/TvMyTitle"
+                android:text="@string/loc_info"
+                android:layout_height="32dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/view_select_area"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_my_zizhi" />
+
+                <TextView
+                    android:id="@+id/area"
+                    style="@style/ETZizhi"
+                    android:hint="@string/select_area" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                android:id="@+id/view_select_bank"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_map" />
+
+                <TextView
+                    android:id="@+id/map"
+                    style="@style/ETZizhi"
+                    android:hint="@string/select_address" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+
+            <LinearLayout
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_loc" />
+
+                <EditText
+                    android:id="@+id/street"
+                    style="@style/ETZizhi"
+                    android:hint="@string/input_address_details"/>
+            </LinearLayout>
+`
+
+            <LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TvMyTitle"
+                    android:text="@string/seller_conversation_info"
+                    android:layout_height="32dp"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/shop_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/ETZizhi"
+                            android:singleLine="true"
+                            android:hint="@string/input_shop_title"
+                            android:textSize="22sp"
+                            android:maxLength="10"
+                            android:textColor="@color/shop_title"/>
+
+                        <EditText
+                            android:id="@+id/title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/ETZizhi"
+                            android:singleLine="true"
+                            android:hint="@string/input_shop_title2"
+                            android:textSize="16sp"
+                            android:maxLength="16"
+                            android:textColor="@color/shop_title2"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="4dp"/>
+
+                        <View style="@style/Line1"
+                            android:layout_marginLeft="@dimen/view_margin_top"
+                            android:layout_width="160dp"/>
+
+                        <EditText
+                            android:id="@+id/title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/ETZizhi"
+                            android:singleLine="true"
+                            android:hint="@string/input_shop_title3"
+                            android:textSize="16sp"
+                            android:maxLength="14"
+                            android:textColor="@color/shop_title3"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:background="@mipmap/ic_shop_cover_d"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                style="@style/WH_WF_HW_V"
+                android:background="@color/main_bg" >
+
+                <Button
+                    android:id="@+id/sub"
+                    style="@style/BtnRed"
+                    android:layout_margin="8dp"
+                    android:text="@string/submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

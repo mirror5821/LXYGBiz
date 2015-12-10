@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <include layout="@layout/view_title_bar"/>
+
+
+    <com.lxyg.app.business.draglistview.DragListView
+        android:id="@+id/other_drag_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_normal_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_margin_left"
+        android:paddingRight="@dimen/view_margin_left" >
+
+        <TextView
+            android:id="@+id/price_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/paixu_notify"
+            android:textColor="@color/tv_index_item" />
+
+        <Button
+            android:id="@+id/sub"
+            style="@style/BtnBlue"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:text="@string/submit_paixu" />
+    </LinearLayout>
+
+</LinearLayout>

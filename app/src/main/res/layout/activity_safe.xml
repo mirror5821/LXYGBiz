@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            
+
+            <TextView
+                style="@style/TvMyTitle"
+                android:text="@string/good_manager" />
+
+            <LinearLayout
+                android:id="@+id/view_goods"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_phone"
+                    android:text="@string/huowu_manager" />
+
+                <TextView
+                    style="@style/TvMyItemNum"/>
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_order_dai_shou"
+                    android:text="@string/send_manager" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                android:id="@+id/view_seller"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_user_info"
+                    android:text="@string/shanghu_info" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                android:id="@+id/view_zizhi"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_user_vip"
+                    android:text="@string/zizhirenzheng" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/TvMyTitle"
+                android:text="@string/zengzhi_service" />
+
+            <LinearLayout
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_user_vip"
+                    android:text="@string/gold_vip" />
+
+                <TextView
+                    style="@style/TvMyItemNum"/>
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:drawableLeft="@mipmap/ic_user_vip"
+                    android:text="@string/zengzhi_service2" />
+
+                <TextView
+                    style="@style/TvMyItemNum"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

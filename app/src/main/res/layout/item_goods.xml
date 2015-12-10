@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OrderItem" >
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/TvIndexB"
+        android:text="@string/order_dai_shou" />
+
+    <ImageView
+        android:id="@+id/img"
+        style="@style/WH_W"
+        android:src="@mipmap/ic_order_dai_shou" />
+
+    <TextView
+        android:id="@+id/no"
+        style="@style/TvIndexB"
+        android:text="1" />
+
+</LinearLayout>

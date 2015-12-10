@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_my_bg"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:text="@string/loading_data"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TvIndex"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/caiwu" />
+
+                <LinearLayout
+                    style="@style/WH_WF_HW_H"
+                    android:background="@color/white">
+
+                    <LinearLayout style="@style/LLIndex" >
+
+                        <TextView
+                            style="@style/TvIndexL"
+                            android:text="@string/saleY" />
+
+                        <TextView
+                            android:id="@+id/sr_y"
+                            style="@style/TvIndexB"
+                            android:text="@string/loading_no" />
+                    </LinearLayout>
+
+                    <View style="@style/Line2" />
+
+                    <LinearLayout style="@style/LLIndex" >
+
+                        <TextView
+                            style="@style/TvIndexL"
+                            android:text="@string/saleAll" />
+
+                        <TextView
+                            android:id="@+id/sr_t"
+                            style="@style/TvIndexB"
+                            android:text="@string/loading_no" />
+                    </LinearLayout>
+
+                    <View style="@style/Line2" />
+
+                    <LinearLayout style="@style/LLIndex" >
+
+                        <TextView
+                            style="@style/TvIndexL"
+                            android:text="@string/saleYu" />
+
+                        <TextView
+                            android:id="@+id/sr_e"
+                            style="@style/TvIndexB"
+                            android:text="@string/loading_no" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view2"
+                style="@style/TvIndex"
+                android:layout_marginTop="8dp"
+                android:text="@string/order" />
+
+            <LinearLayout
+                style="@style/WH_WF_HW_H"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/view2_1"
+                    style="@style/LLIndex" >
+
+                    <TextView
+                        style="@style/TvIndexL"
+                        android:text="@string/order_new" />
+
+                    <TextView
+                        android:id="@+id/o_new"
+                        style="@style/TvIndexRed"
+                        android:text="@string/loading_no" />
+                </LinearLayout>
+
+                <View style="@style/Line2" />
+
+                <LinearLayout
+                    android:id="@+id/view2_2"
+                    style="@style/LLIndex" >
+
+                    <TextView
+                        style="@style/TvIndexL"
+                        android:text="@string/order_daishou" />
+
+                    <TextView
+                        android:id="@+id/o_dai"
+                        style="@style/TvIndexRed"
+                        android:text="@string/loading_no" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TvIndex"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/qiangdan" />
+
+                <LinearLayout
+                    style="@style/LLIndex"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        style="@style/TvIndexB"
+                        android:text="@string/qiangdan_now" />
+
+                    <TextView
+                        android:id="@+id/o_qiang"
+                        style="@style/TvIndexRed"
+                        android:text="@string/loading_no" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/TvIndex"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/customer" />
+
+                <LinearLayout
+                    style="@style/WH_WF_HW_H"
+                    android:background="@color/white">
+
+                    <LinearLayout style="@style/LLIndex" >
+
+                        <TextView
+                            style="@style/TvIndexL"
+                            android:text="@string/customer_y" />
+
+                        <TextView
+                            android:id="@+id/p_new"
+                            style="@style/TvIndexB"
+                            android:text="@string/loading_no" />
+                    </LinearLayout>
+
+                    <View style="@style/Line2" />
+
+                    <LinearLayout style="@style/LLIndex" >
+
+                        <TextView
+                            style="@style/TvIndexL"
+                            android:text="@string/customer_lv" />
+
+                        <TextView
+                            android:id="@+id/p_huo"
+                            style="@style/TvIndexB"
+                            android:text="@string/loading_no" />
+                    </LinearLayout>
+
+                    <View style="@style/Line2" />
+
+                    <LinearLayout style="@style/LLIndex" >
+
+                        <TextView
+                            style="@style/TvIndexL"
+                            android:text="@string/customer_all" />
+
+                        <TextView
+                            android:id="@+id/p_all"
+                            style="@style/TvIndexB"
+                            android:text="@string/loading_no" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

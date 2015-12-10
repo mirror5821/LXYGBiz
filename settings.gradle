@@ -1,0 +1,6 @@
+include ':jPushLibrary'
+include ':pullToRefreshLibrary'
+include ':devMirrorLibrary'
+include ':umengLirary'
+include ':zxingLibrary'
+include ':app'

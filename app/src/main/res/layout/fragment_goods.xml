@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_red" 
+            android:textSize="12sp"/>
+        
+        <CheckBox 
+            android:id="@+id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <include layout="@layout/base_fragment_list" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_bg"
+        android:orientation="vertical"
+        android:paddingBottom="4dp" >
+
+        <!-- <View style="@style/Line1" /> -->
+
+        <Button
+            android:id="@+id/btn_goods"
+            style="@style/BtnRed"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/goods_make" />
+    </LinearLayout>
+
+</LinearLayout>

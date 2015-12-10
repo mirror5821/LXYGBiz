@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/LLMyItem" >
+
+        <TextView
+            style="@style/TvZiZhiTitle"
+            android:drawableLeft="@mipmap/ic_input_pass_new" />
+
+        <EditText
+            android:id="@+id/pass1"
+            style="@style/ETZizhi"
+            android:inputType="textPassword"
+            android:hint="@string/input_pass" />
+    </LinearLayout>
+
+    <View style="@style/Line3" />
+
+    <LinearLayout style="@style/LLMyItem" >
+
+        <TextView
+            style="@style/TvZiZhiTitle"
+            android:drawableLeft="@mipmap/ic_input_pass_new" />
+
+        <EditText
+            android:id="@+id/pass2"
+            style="@style/ETZizhi"
+            android:hint="@string/input_pass_confirm" 
+            android:inputType="textPassword"/>
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/sub"
+        style="@style/BtnRed"
+        android:layout_margin="8dp"
+        android:text="@string/next"/>
+    
+
+</LinearLayout>

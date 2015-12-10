@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout style="@style/WH_WF_HW_V" >
+
+            <LinearLayout style="@style/WH_WF_HW_H" >
+
+                <TextView
+                    style="@style/TvOrderTitle"
+                    android:text="@string/order_num" />
+
+                <TextView
+                    android:id="@+id/num"
+                    style="@style/TvOrderContent" />
+            </LinearLayout>
+
+            <View style="@style/Line1" />
+
+            <LinearLayout style="@style/WH_WF_HW_H" >
+
+                <TextView
+                    style="@style/TvOrderTitle"
+                    android:text="@string/status" />
+
+                <TextView
+                    android:id="@+id/status"
+                    style="@style/TvOrderContent" />
+            </LinearLayout>
+
+            <View style="@style/Line1" />
+
+            <LinearLayout style="@style/WH_WF_HW_H" >
+
+                <TextView
+                    style="@style/TvOrderTitle"
+                    android:text="@string/type" />
+
+                <TextView
+                    android:id="@+id/type"
+                    style="@style/TvOrderContent" />
+            </LinearLayout>
+
+            <View style="@style/Line1" />
+
+            <LinearLayout style="@style/WH_WF_HW_H" >
+
+                <TextView
+                    style="@style/TvOrderTitle"
+                    android:text="@string/pay_ment" />
+
+                <TextView
+                    android:id="@+id/payment"
+                    style="@style/TvOrderContent" />
+            </LinearLayout>
+
+            <View style="@style/Line1" />
+
+            <LinearLayout style="@style/WH_WF_HW_H" >
+
+                <TextView
+                    style="@style/TvOrderTitle"
+                    android:text="@string/order_total_price" />
+
+                <TextView
+                    android:id="@+id/price"
+                    style="@style/TvOrderContent" />
+            </LinearLayout>
+
+            <View style="@style/Line1" />
+
+            <LinearLayout
+                style="@style/WH_WF_HW_H"
+                android:background="@drawable/bg_normal_press_white" >
+
+                <TextView
+                    style="@style/TvOrderTitle"
+                    android:text="@string/send_address" />
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/TvOrderContent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:minHeight="@dimen/item_normal_height"
+                    android:paddingBottom="8dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout
+                android:id="@+id/view_fahuo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <View style="@style/Line1" />
+
+                <LinearLayout
+                    style="@style/WH_WF_HW_H"
+                    android:background="@drawable/bg_normal_press_white" >
+
+                    <TextView
+                        style="@style/TvOrderTitle"
+                        android:text="@string/fahuo_time" />
+
+                    <TextView
+                        android:id="@+id/fahuo_time"
+                        style="@style/TvOrderContent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:minHeight="@dimen/item_normal_height"
+                        android:paddingBottom="8dp"
+                        android:singleLine="false" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/view_finish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <View style="@style/Line1" />
+
+                <LinearLayout
+                    style="@style/WH_WF_HW_H"
+                    android:background="@drawable/bg_normal_press_white" >
+
+                    <TextView
+                        style="@style/TvOrderTitle"
+                        android:text="@string/fahuo_time" />
+
+                    <TextView
+                        android:id="@+id/finish_time"
+                        style="@style/TvOrderContent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:minHeight="@dimen/item_normal_height"
+                        android:paddingBottom="8dp"
+                        android:singleLine="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/Line1" />
+
+            <LinearLayout style="@style/WH_WF_HW_H" >
+
+                <TextView
+                    style="@style/TvOrderTitle"
+                    android:text="@string/order_createtime" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/TvOrderContent" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/view_rang_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:visibility="gone">
+
+                <View style="@style/Line1" />
+
+                <LinearLayout style="@style/WH_WF_HW_H" >
+
+                    <TextView
+                        style="@style/TvOrderTitle"
+                        android:text="@string/order_rang_time" />
+
+                    <TextView
+                        android:id="@+id/time_rang"
+                        style="@style/TvOrderContent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/Line1" />
+
+            <LinearLayout
+                android:id="@+id/view1"
+                style="@style/WH_WF_HW_V" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 抢单 -->
+
+    <LinearLayout
+        android:id="@+id/view_b1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_qiang"
+            style="@style/BtnRed"
+            android:text="@string/qiangdan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_b2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_rang_s"
+            style="@style/BtnDark"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/order_rang" 
+            android:layout_marginRight="4dp"/>
+
+
+        <Button
+            android:id="@+id/btn_fa"
+            style="@style/BtnRed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/fahuo" 
+            android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_b3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone" >
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/BtnRed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/send_mark_sure" />
+        
+    </LinearLayout>
+
+</LinearLayout>

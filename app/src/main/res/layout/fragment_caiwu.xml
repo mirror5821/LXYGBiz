@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/caiwu_dark" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp" >
+
+                    <TextView
+                        style="@style/TvCaiwuDark"/>
+
+                    <TextView
+                        style="@style/TvCaiwu"
+                        android:text="@string/yesterday" 
+                        android:background="@color/caiwu_dark"/>
+
+                    <TextView
+                        style="@style/TvCaiwu"
+                        android:text="@string/total" 
+                        android:background="@color/caiwu_dark"/>
+                </TableRow>
+
+                <View style="@style/Line4" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TvCaiwuDark"
+                        android:text="@string/revenue" />
+
+                    <TextView
+                        android:id="@+id/y1"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" 
+                        android:textColor="@color/green"/>
+
+                    <TextView
+                        android:id="@+id/a1"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" />
+                </TableRow>
+
+                <View style="@style/Line4" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TvCaiwuDark"
+                        android:text="@string/rang_e" />
+
+                    <TextView
+                        android:id="@+id/y2"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" 
+                        android:textColor="@color/green"/>
+
+                    <TextView
+                        android:id="@+id/a2"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" />
+                </TableRow>
+
+                <View style="@style/Line4" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TvCaiwuDark"
+                        android:text="@string/qiang_e" />
+
+                    <TextView
+                        android:id="@+id/y3"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" 
+                        android:textColor="@color/main_red"/>
+
+                    <TextView
+                        android:id="@+id/a3"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" />
+                </TableRow>
+
+                <View style="@style/Line4" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TvCaiwuDark"
+                        android:text="@string/tixian" />
+
+                    <TextView
+                        android:id="@+id/y4"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" 
+                        android:textColor="@color/main_red"/>
+
+                    <TextView
+                        android:id="@+id/a4"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" />
+                </TableRow>
+
+                <View style="@style/Line4" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TvCaiwuDark"
+                        android:text="@string/net_income" />
+
+                    <TextView
+                        android:id="@+id/y5"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" 
+                        android:textColor="@color/green"/>
+
+                    <TextView
+                        android:id="@+id/a5"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" />
+                </TableRow>
+
+                <View style="@style/Line4" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/TvCaiwuDark"
+                        android:text="@string/balance_now" />
+
+                    <TextView
+                        style="@style/TvCaiwu" />
+
+                    <TextView
+                        android:id="@+id/a6"
+                        style="@style/TvCaiwu"
+                        android:text="@string/loading_no" 
+                        android:textColor="@color/main_red"/>
+                </TableRow>
+
+                
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <Button
+                    android:id="@+id/tixian"
+                    style="@style/BtnRed"
+                    android:text="@string/tixian" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

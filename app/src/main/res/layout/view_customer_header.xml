@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="@color/bg_customer_header" >
+    
+    
+    <TextView style="@style/TvCustomerHeader"
+        android:text="@string/date"/>
+    
+    <TextView style="@style/TvCustomerHeader"
+        android:text="@string/new_add"/>
+    
+    <TextView style="@style/TvCustomerHeader"
+        android:text="@string/huoyuelv"/>
+    
+    <TextView style="@style/TvCustomerHeader"
+        android:text="@string/totle"/>
+    
+
+</LinearLayout>

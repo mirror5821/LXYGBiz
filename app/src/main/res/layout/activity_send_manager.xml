@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/main_bg">
+    
+    <include layout="@layout/view_title_bar"/>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp">
+            
+            
+            <LinearLayout style="@style/OrderItem">
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="@string/order_dai_shou"
+                    />
+                
+                <ImageView style="@style/WH_W"
+                    android:src="@mipmap/ic_order_dai_shou"/>
+                
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="1"/>
+            </LinearLayout>
+            
+            
+            <LinearLayout style="@style/OrderItem">
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="@string/order_re"
+                    />
+                
+                <ImageView style="@style/WH_W"
+                    android:src="@mipmap/ic_order_ref"/>
+                
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="1"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp">
+            
+            
+            
+            <LinearLayout style="@style/OrderItem">
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="@string/order_ok"
+                    />
+                
+                <ImageView style="@style/WH_W"
+                    android:src="@mipmap/ic_order_ok"/>
+                
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="1"/>
+            </LinearLayout>
+            
+            
+            <LinearLayout style="@style/OrderItem">
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="@string/order_rang"
+                    />
+                
+                <ImageView style="@style/WH_W"
+                    android:src="@mipmap/ic_order_rang"/>
+                
+                
+                <TextView style="@style/TvIndexB"
+                    android:text="1"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

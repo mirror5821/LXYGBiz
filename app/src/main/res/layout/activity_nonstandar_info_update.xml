@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+
+    <include layout="@layout/view_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ETZizhi"
+                android:singleLine="true"
+                android:hint="@string/input_shop_title"
+                android:textSize="22sp"
+                android:maxLength="10"
+                android:textColor="@color/shop_title"/>
+
+            <EditText
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ETZizhi"
+                android:singleLine="true"
+                android:hint="@string/input_shop_title2"
+                android:textSize="16sp"
+                android:maxLength="16"
+                android:textColor="@color/shop_title2"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"/>
+
+            <View style="@style/Line1"
+                android:layout_marginLeft="@dimen/view_margin_top"
+                android:layout_width="160dp"/>
+
+            <EditText
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ETZizhi"
+                android:singleLine="true"
+                android:hint="@string/input_shop_title3"
+                android:textSize="16sp"
+                android:maxLength="14"
+                android:textColor="@color/shop_title3"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/ic_test_shop2"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sub"
+        style="@style/BtnRed"
+        android:layout_margin="@dimen/view_margin_top"
+        android:text="@string/update_submit"/>
+</LinearLayout>

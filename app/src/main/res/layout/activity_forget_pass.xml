@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title_bar"/>
+    
+    <RadioGroup android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/rg">
+        
+        <RadioButton 
+            android:id="@+id/rb1"
+            style="@style/RBTv"
+            android:text="@string/register1"/>
+        
+        <RadioButton 
+            android:id="@+id/rb2"
+            style="@style/RBTv"
+            android:text="@string/register2"/>
+        
+        
+    </RadioGroup>
+    
+    <FrameLayout 
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

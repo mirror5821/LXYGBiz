@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_img_add_header"/>
+
+            <LinearLayout style="@style/LLMyItem"
+                android:layout_marginTop="@dimen/view_margin_top">
+
+                <TextView
+                    style="@style/TvInput"
+                    android:text="@string/product_name"/>
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/ETInput"
+                    android:hint="@string/input_product_name"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LLMyItem">
+
+                <TextView
+                    style="@style/TvInput"
+                    android:text="@string/sort_name"/>
+                <EditText
+                    android:id="@+id/sort_title"
+                    style="@style/ETInput"
+                    android:hint="@string/input_sort_name"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LLMyItem">
+
+                <TextView
+                    style="@style/TvInput"
+                    android:text="@string/unit"/>
+                <EditText
+                    android:id="@+id/unit"
+                    style="@style/ETInput"
+                    android:hint="@string/input_unit"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LLMyItem">
+
+                <TextView
+                    style="@style/TvInput"
+                    android:text="@string/sale_price"/>
+                <EditText
+                    android:id="@+id/price"
+                    style="@style/ETInput"
+                    android:hint="@string/input_sale_price"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LLMyItem">
+
+                <TextView
+                    style="@style/TvInput"
+                    android:text="@string/market_price"/>
+                <EditText
+                    android:id="@+id/market_price"
+                    style="@style/ETInput"
+                    android:hint="@string/input_market_price"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LLMyItem">
+
+                <TextView
+                    style="@style/TvInput"
+                    android:text="@string/e_case_price"/>
+                <EditText
+                    android:id="@+id/e_cash"
+                    style="@style/ETInput"
+                    android:hint="@string/input_e_case_price"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/delete"
+                style="@style/BtnRed"
+                android:layout_margin="@dimen/view_margin_top"
+                android:text="@string/delete_product"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/view1"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:text="@string/update_login_pass" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                android:id="@+id/view2"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:text="@string/update_tixian_pass" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+            
+            <LinearLayout
+                android:id="@+id/view3"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:text="@string/shop_qimg" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+            
+            <View style="@style/Line3" />
+            
+            <LinearLayout
+                android:id="@+id/view4"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvMyItem"
+                    android:text="@string/scan_qimg" />
+
+                <TextView style="@style/TvMyItemNum" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

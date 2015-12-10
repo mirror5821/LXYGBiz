@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ver"
+        style="@style/TvMyTitle"
+        android:gravity="center"
+        android:text="@string/zizhi_content"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+    
+    
+    <TextView
+        android:id="@+id/ver2"
+        style="@style/TvMyTitle"
+        android:gravity="center"
+        android:text="@string/zizhi_content"
+        android:textColor="@color/green"
+        android:textSize="12sp" 
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_name" />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/ETZizhi"
+                    android:hint="@string/input_name" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_select" />
+
+                <TextView
+                    android:id="@+id/no"
+                    style="@style/ETZizhi"
+                    android:hint="@string/input_no" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <LinearLayout
+                android:id="@+id/view_select_bank"
+                style="@style/LLMyItem" >
+
+                <TextView
+                    style="@style/TvZiZhiTitle"
+                    android:drawableLeft="@mipmap/ic_input_map" />
+
+                <TextView
+                    android:id="@+id/kaihuhang"
+                    style="@style/ETZizhi"
+                    android:hint="@string/select_bank" />
+            </LinearLayout>
+
+            <View style="@style/Line3" />
+
+            <TextView
+                android:id="@+id/zhihang"
+                style="@style/ETZizhi"
+                android:layout_marginLeft="48dp"
+                android:hint="@string/input_bank_zhihang" />
+
+            <View style="@style/Line3" />
+
+            <TextView
+                android:id="@+id/bank_name"
+                style="@style/ETZizhi"
+                android:layout_marginLeft="48dp" />
+
+            <View style="@style/Line3" />
+
+            <TextView
+                android:id="@+id/card_num"
+                style="@style/ETZizhi"
+                android:layout_marginLeft="48dp"
+                android:hint="@string/input_bank_num" />
+
+            <TextView
+                style="@style/TvMyTitle"
+                android:text="@string/zizhirenzheng" />
+
+            <LinearLayout style="@style/WH_WF_HW_V" >
+
+                <LinearLayout
+                    android:id="@+id/view1"
+                    style="@style/LLMyItem" >
+
+                    <TextView
+                        style="@style/TvZiZhiTitle"
+                        android:drawableLeft="@mipmap/ic_input_camera" />
+
+                    <TextView
+                        style="@style/ETZizhi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/hand_no_ok" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="8dp" />
+                </LinearLayout>
+
+                <View style="@style/Line1" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/WH_WF_HW_V" >
+
+                <LinearLayout
+                    android:id="@+id/view2"
+                    style="@style/LLMyItem" >
+
+                    <TextView
+                        style="@style/TvZiZhiTitle"
+                        android:drawableLeft="@mipmap/ic_input_camera" />
+
+                    <TextView
+                        style="@style/ETZizhi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/hand_bank_ok" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="8dp" />
+                </LinearLayout>
+
+                <View style="@style/Line1" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/WH_WF_HW_V" >
+
+                <LinearLayout
+                    android:id="@+id/view3"
+                    style="@style/LLMyItem" >
+
+                    <TextView
+                        style="@style/TvZiZhiTitle"
+                        android:drawableLeft="@mipmap/ic_input_camera" />
+
+                    <TextView
+                        style="@style/ETZizhi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/hand_zizhi_ok" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="8dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

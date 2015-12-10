@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#99ccff</color>
+    <color name="colorPrimaryDark">#3399cc</color>
+    <color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">@color/main_red</color>
+    <color name="colorPrimaryDark">#d42317</color>
+    <color name="colorAccent">@color/main_red</color>
+
+
+    <!--程序内部使用色值 -->
+    <color name="main_red">#ff4400</color>
+    <color name="main_bg">#eeeeee</color>
+    <color name="driver">#cacaca</color>
+    <color name="normal_press">#d5e3d9</color>
+
+    <color name="tab_tv_s">#ff6600</color>
+    <color name="tab_tv_n">#5b5a59</color>
+
+    <color name="tv_title">#383838</color>
+    <color name="tv_item_title">#383838</color>
+    <color name="tv_index_item">#999999</color>
+    <color name="tv_category_list1">#616161</color>
+
+    <color name="btn_blue">#397fc7</color>
+    <color name="btn_dark">#cccccc</color>
+    <color name="gray2">#eff0f0</color>
+    <color name="caiwu_dark">#dbdbdb</color>
+
+    <color name="bg_customer_header">#eeeeee</color>
+    <color name="btn_enabled_false">#a6a497</color>
+
+    <!-- 二维码 -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+
+    <!-- -->
+    <color name="shop_title">#d890bc</color>
+    <color name="shop_title2">#141317</color>
+    <color name="shop_title3">#8c081108</color>
+
+    <color name="cawu_out">#ff463c</color>
+    <color name="cawu_in">#098f0d</color>
+    <color name="cawu_none">#9a0e1c0e</color>
+
+</resources>
